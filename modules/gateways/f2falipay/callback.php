@@ -84,13 +84,13 @@ if (!empty($_POST['out_trade_no']) && trim($_POST['out_trade_no'])!=""){
             break;
         case "FAILED":
             if(!empty($queryResult->getResponse())){
-	            logTransaction($gatewayParams['name'], json_encode($queryResult->getResponse()), 'FAILED');
+	            //logTransaction($gatewayParams['name'], json_encode($queryResult->getResponse()), 'FAILED');
                 echo json_encode($queryResult->getResponse());
             }
             break;
         case "UNKNOWN":
             if(!empty($queryResult->getResponse())){
-	            logTransaction($gatewayParams['name'], json_encode($queryResult->getResponse()), 'UNKNOWN');
+	            //logTransaction($gatewayParams['name'], json_encode($queryResult->getResponse()), 'UNKNOWN');
                 echo json_encode($queryResult->getResponse());
             }
             break;

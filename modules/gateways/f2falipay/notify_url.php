@@ -105,6 +105,6 @@ if ( $param['app_id'] == $config['app_id'] ) { //验证成功
 		
 } else {
     //验证失败
-    logTransaction($gatewayParams['name'], $param, 'FAILED');
+    //logTransaction($gatewayParams['name'], $param, 'FAILED');
     echo "fail";	//请不要修改或删除
 }
